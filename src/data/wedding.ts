@@ -26,7 +26,11 @@ export const wedding = {
     documentTitle: `${bride.shortName} & ${groom.shortName} | Wedding Invitation`,
     metaDescription: `${bride.name} & ${groom.name} — You are cordially invited to the wedding. Nikah & reception on 26 July 2026 at NNS Auditorium, Thayyil.`,
   },
-  weddingDate: '2026-07-26T12:30:00',
+  weddingDate: '2026-07-26T11:00:00',
+  schedule: {
+    nikahTime: '11:00 AM',
+    receptionLabel: 'Reception',
+  },
   tagline: 'With hearts full of joy, we invite you to share in our happiness',
   invitation: {
     headline: 'You are cordially invited',

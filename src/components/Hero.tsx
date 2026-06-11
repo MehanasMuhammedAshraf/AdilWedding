@@ -218,7 +218,7 @@ export function Hero() {
             <p className="hero-date-venue">{wedding.venue.full}</p>
           </div>
           <p className="hero-date-meta type-caption mt-2.5 text-brown/85">
-            Nikah at 12:30 PM · Reception follows
+            Nikah at {wedding.schedule.nikahTime} · {wedding.schedule.receptionLabel}
           </p>
         </motion.div>
       </motion.div>

@@ -36,7 +36,7 @@ export function Footer() {
           <motion.p variants={staggerItem} className="font-arabic mb-4 text-xl text-chocolate md:text-2xl">
             بارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا
           </motion.p>
-          <motion.p variants={staggerItem} className="type-body-serif mb-8 text-sm italic text-brown/55">
+          <motion.p variants={staggerItem} className="type-body-serif mb-8 italic text-brown/88">
             May Allah bless them both and shower His blessings upon them
           </motion.p>
 
@@ -48,14 +48,14 @@ export function Footer() {
             {wedding.story.paragraphs[1]}
           </motion.p>
 
-          <motion.p variants={staggerItem} className="type-caption mb-6 text-brown/55">
+          <motion.p variants={staggerItem} className="type-caption mb-6 text-brown/85">
             {wedding.contact.hostLabel}
           </motion.p>
 
           <motion.a
             variants={staggerItem}
             href={`tel:${wedding.contact.bridePhone}`}
-            className="mb-10 inline-flex items-center gap-2 rounded-full border border-caramel/25 bg-linen px-5 py-2.5 text-sm text-brown/70 transition-colors hover:border-caramel/50 hover:text-caramel"
+            className="mb-10 inline-flex items-center gap-2 rounded-full border border-caramel/25 bg-linen px-5 py-2.5 text-base text-brown/90 transition-colors hover:border-caramel/50 hover:text-caramel"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -63,7 +63,7 @@ export function Footer() {
             {wedding.contact.phoneDisplay}
           </motion.a>
 
-          <motion.p variants={staggerItem} className="type-caption text-brown/40">
+          <motion.p variants={staggerItem} className="type-caption text-brown/75">
             With love, from our family
           </motion.p>
         </motion.div>

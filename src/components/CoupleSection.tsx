@@ -39,7 +39,6 @@ function CoupleCard({
       <span className="couple-monogram" aria-hidden>
         {monogram}
       </span>
-
       <div className="couple-showcase-inner">
         <span className="couple-card-corner couple-card-corner-tl" aria-hidden />
         <span className="couple-card-corner couple-card-corner-tr" aria-hidden />

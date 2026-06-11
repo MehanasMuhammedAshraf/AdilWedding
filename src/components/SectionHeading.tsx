@@ -44,7 +44,7 @@ export function SectionHeading({
           variants={fadeUp}
           custom={0.2}
           className={`type-body-serif mx-auto mt-4 max-w-xl italic ${
-            light ? 'text-brown/55' : 'text-brown/55'
+            light ? 'text-brown/85' : 'text-brown/85'
           }`}
         >
           {subtitle}

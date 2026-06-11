@@ -5,6 +5,26 @@ import { wedding } from '../data/wedding'
 import { FloatingParticles } from './FloatingParticles'
 import { FloralAccent } from './FloralAccent'
 
+function titleCaseWords(name: string) {
+  return name
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+}
+
+function HeroName({ name }: { name: string }) {
+  const words = titleCaseWords(name)
+  return (
+    <p className="hero-name-line">
+      {words.map((word, index) => (
+        <span key={`${word}-${index}`}>
+          {index > 0 && ' '}
+          {word}
+        </span>
+      ))}
+    </p>
+  )
+}
+
 const petals = Array.from({ length: 4 }, (_, i) => ({
   id: i,
   left: `${8 + (i * 11) % 88}%`,
@@ -101,7 +121,7 @@ export function Hero() {
         </motion.p>
 
         <motion.p
-          className="type-caption mb-10 text-brown-light/90"
+          className="type-caption mb-10 text-brown"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -135,7 +155,7 @@ export function Hero() {
         </motion.div>
 
         <motion.p
-          className="type-eyebrow hero-invite-line mb-3 text-brown-light"
+          className="type-eyebrow hero-invite-line mb-3 text-brown"
           initial={{ opacity: 0, letterSpacing: '0.1em' }}
           animate={{ opacity: 1, letterSpacing: '0.28em' }}
           transition={{ duration: 1.5, delay: 0.8 }}
@@ -144,7 +164,7 @@ export function Hero() {
         </motion.p>
 
         <motion.p
-          className="hero-subline-serif mx-auto mb-8 max-w-md italic text-brown/65"
+          className="hero-subline-serif mx-auto mb-8 max-w-md italic text-brown/90"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.95, duration: 0.8 }}
@@ -158,15 +178,15 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="hero-name-line font-script">{wedding.bride.name}</p>
+          <HeroName name={wedding.bride.name} />
           <p className="hero-amp font-display" aria-hidden>
             &
           </p>
-          <p className="hero-name-line font-script">{wedding.groom.name}</p>
+          <HeroName name={wedding.groom.name} />
         </motion.div>
 
         <motion.p
-          className="hero-subline-serif mx-auto mb-8 mt-8 max-w-md italic text-brown/60"
+          className="hero-subline-serif mx-auto mb-8 mt-8 max-w-md italic text-brown/88"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.7 }}
@@ -175,7 +195,7 @@ export function Hero() {
         </motion.p>
 
         <motion.p
-          className="hero-tagline mx-auto max-w-md italic text-brown/50"
+          className="hero-tagline mx-auto max-w-md italic text-brown/85"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.85 }}
@@ -197,7 +217,7 @@ export function Hero() {
             <MapPin className="h-3.5 w-3.5 text-caramel" strokeWidth={1.5} />
             <p className="hero-date-venue">{wedding.venue.full}</p>
           </div>
-          <p className="hero-date-meta type-caption mt-2.5 text-brown-light/80">
+          <p className="hero-date-meta type-caption mt-2.5 text-brown/85">
             Nikah at 12:30 PM · Reception follows
           </p>
         </motion.div>

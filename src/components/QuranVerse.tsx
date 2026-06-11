@@ -27,7 +27,7 @@ export function QuranVerse() {
           <motion.p variants={fadeUp} custom={0} className="type-eyebrow mb-3 text-brown-light">
             From the Quran
           </motion.p>
-          <motion.p variants={fadeUp} custom={0.1} className="type-body-serif mb-10 text-sm italic text-brown/50">
+          <motion.p variants={fadeUp} custom={0.1} className="type-body-serif mb-10 italic text-brown/85">
             {quranVerse.reference}
           </motion.p>
 
@@ -69,12 +69,12 @@ export function QuranVerse() {
           <motion.p
             variants={fadeUp}
             custom={0.5}
-            className="type-body-serif mx-auto max-w-2xl italic text-brown/70"
+            className="type-body-serif mx-auto max-w-2xl italic text-brown/90"
           >
             &ldquo;{quranVerse.translation}&rdquo;
           </motion.p>
 
-          <motion.p variants={fadeUp} custom={0.6} className="type-caption mt-8 text-brown-light/70">
+          <motion.p variants={fadeUp} custom={0.6} className="type-caption mt-8 text-brown/85">
             — {quranVerse.surah} {quranVerse.ayah}
           </motion.p>
         </motion.div>

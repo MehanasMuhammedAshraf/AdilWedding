@@ -11,7 +11,6 @@ function titleCaseWords(name: string) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
 }
 
-
 function HeroName({ name }: { name: string }) {
   const words = titleCaseWords(name)
   return (
@@ -22,7 +21,6 @@ function HeroName({ name }: { name: string }) {
           {word}
         </span>
       ))}
-      
     </p>
   )
 }

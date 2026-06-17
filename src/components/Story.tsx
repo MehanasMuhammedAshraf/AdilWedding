@@ -7,7 +7,10 @@ export function Story() {
   return (
     <section id="story" className="section-shell relative overflow-hidden bg-cream-dark">
       <div className="content-wrap mx-auto max-w-3xl">
-        <SectionHeading label={wedding.story.title} title="With Love & Dua" />
+        <SectionHeading
+          label={wedding.sections.story.label}
+          title={wedding.sections.story.title}
+        />
 
         <motion.div
           className="story-card relative overflow-hidden p-8 md:p-10"

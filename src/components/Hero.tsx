@@ -178,11 +178,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <HeroName name={wedding.bride.name} />
+          <HeroName name={wedding.groom.name} />
           <p className="hero-amp font-display" aria-hidden>
             &
           </p>
-          <HeroName name={wedding.groom.name} />
+          <HeroName name={wedding.bride.name} />
         </motion.div>
 
         <motion.p
@@ -211,14 +211,14 @@ export function Hero() {
         >
           <div className="mb-2.5 flex items-center justify-center gap-2 text-gold">
             <Calendar className="h-3.5 w-3.5" strokeWidth={1.5} />
-            <p className="hero-date-main">Sunday, 26 July 2026</p>
+            <p className="hero-date-main">{wedding.dateDisplay}</p>
           </div>
           <div className="flex items-center justify-center gap-2">
             <MapPin className="h-3.5 w-3.5 text-caramel" strokeWidth={1.5} />
             <p className="hero-date-venue">{wedding.venue.full}</p>
           </div>
           <p className="hero-date-meta type-caption mt-2.5 text-brown/85">
-            Nikah at {wedding.schedule.nikahTime} · {wedding.schedule.receptionLabel}
+            {wedding.schedule.receptionLabel}
           </p>
         </motion.div>
       </motion.div>

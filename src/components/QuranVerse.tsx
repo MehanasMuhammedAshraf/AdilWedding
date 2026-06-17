@@ -25,7 +25,7 @@ export function QuranVerse() {
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.p variants={fadeUp} custom={0} className="type-eyebrow mb-3 text-brown-light">
-            From the Quran
+            {wedding.sections.quran.eyebrow}
           </motion.p>
           <motion.p variants={fadeUp} custom={0.1} className="type-body-serif mb-10 italic text-brown/85">
             {quranVerse.reference}

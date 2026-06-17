@@ -125,20 +125,6 @@ export function CoupleSection() {
 
         <div className="relative grid items-stretch gap-5 md:grid-cols-[1fr_auto_1fr] md:gap-6 lg:gap-8">
           <CoupleCard
-            role="The Bride"
-            name={wedding.bride.name}
-            father={wedding.bride.father}
-            mother={wedding.bride.mother}
-            address={wedding.bride.address}
-            relation="D/o"
-            variant="bride"
-            monogram={wedding.bride.monogram}
-            delay={0.1}
-          />
-
-          <CenterOrnament />
-
-          <CoupleCard
             role="The Groom"
             name={wedding.groom.name}
             father={wedding.groom.father}
@@ -147,6 +133,20 @@ export function CoupleSection() {
             relation="S/o"
             variant="groom"
             monogram={wedding.groom.monogram}
+            delay={0.1}
+          />
+
+          <CenterOrnament />
+
+          <CoupleCard
+            role="The Bride"
+            name={wedding.bride.name}
+            father={wedding.bride.father}
+            mother={wedding.bride.mother}
+            address={wedding.bride.address}
+            relation="D/o"
+            variant="bride"
+            monogram={wedding.bride.monogram}
             delay={0.2}
           />
         </div>

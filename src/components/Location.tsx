@@ -25,9 +25,9 @@ export function Location() {
           viewport={viewportOnce}
           transition={{ duration: 0.8 }}
         >
-          <p className="venue-header-label type-eyebrow">Find Us</p>
-          <h2 className="font-script venue-header-title">The Venue</h2>
-          <p className="venue-header-subtitle type-body-serif text-base">Directions to our celebration venue</p>
+          <p className="venue-header-label type-eyebrow">{wedding.sections.venue.label}</p>
+          <h2 className="font-script venue-header-title">{wedding.sections.venue.title}</h2>
+          <p className="venue-header-subtitle type-body-serif text-base">{wedding.sections.venue.subtitle}</p>
         </motion.div>
 
         <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">

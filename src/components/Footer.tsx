@@ -52,16 +52,18 @@ export function Footer() {
             {wedding.contact.hostLabel}
           </motion.p>
 
-          <motion.a
-            variants={staggerItem}
-            href={`tel:${wedding.contact.bridePhone}`}
-            className="mb-10 inline-flex items-center gap-2 rounded-full border border-caramel/25 bg-linen px-5 py-2.5 text-base text-brown/90 transition-colors hover:border-caramel/50 hover:text-caramel"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <Phone className="h-4 w-4" />
-            {wedding.contact.phoneDisplay}
-          </motion.a>
+          {wedding.contact.phone ? (
+            <motion.a
+              variants={staggerItem}
+              href={`tel:${wedding.contact.phone}`}
+              className="mb-10 inline-flex items-center gap-2 rounded-full border border-caramel/25 bg-linen px-5 py-2.5 text-base text-brown/90 transition-colors hover:border-caramel/50 hover:text-caramel"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Phone className="h-4 w-4" />
+              {wedding.contact.phoneDisplay}
+            </motion.a>
+          ) : null}
 
           <motion.p variants={staggerItem} className="type-caption text-brown/75">
             With love, from our family

@@ -27,6 +27,8 @@ export const wedding = {
     coupleFull: `${groom.name} & ${bride.name}`,
     documentTitle: `${groom.shortName} & ${bride.shortName} | Wedding Invitation`,
     metaDescription: `${groom.name} & ${bride.name} — You are cordially invited to the wedding reception on 29 July 2026 at White Castle Auditorium, Kannancheri, Calicut.`,
+    ogTitle: `${groom.shortName} & ${bride.shortName} — Wedding Invitation`,
+    ogSiteName: `${groom.shortName} & ${bride.shortName} Wedding`,
   },
   weddingDate: '2026-07-29T11:00:00',
   dateDisplay: 'Wednesday, 29 July 2026',
@@ -52,6 +54,7 @@ export const wedding = {
   },
   images: {
     hero: '/images/hero-couple-veil.jpg',
+    og: '/og-preview.png',
     quran:
       'https://images.unsplash.com/photo-1591604466107-d94487557561?auto=format&fit=crop&w=1920&q=80',
   },
